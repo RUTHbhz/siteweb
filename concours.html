@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Détails de l'actualité Impact Eco Group - Concours de développement logiciel">
+    <title>Concours de Développement Logiciel - Impact Eco Group</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome pour les icônes -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS pour animations -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body class="bg-gray-50 font-sans">
+
+    <!-- Header -->
+    <header class="bg-green-800 text-white py-6">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <img src="C:/Users/MAKARATASI/Desktop/SiteW/Files/logo.jpg" alt="Impact Eco Group Logo" class="h-12 sm:h-16">
+            <nav>
+                <ul class="flex space-x-4 sm:space-x-8">
+                    <li><a href="#about" class="hover:text-gray-300 transition-colors">À propos</a></li>
+                    <li><a href="#projects" class="hover:text-gray-300 transition-colors">Nos Projets</a></li>
+                    <li><a href="#partners" class="hover:text-gray-300 transition-colors">Nos Partenaires</a></li>
+                    <li><a href="#news" class="hover:text-gray-300 transition-colors">Actualités</a></li>
+                    <li><a href="#contact" class="hover:text-gray-300 transition-colors">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-[60vh]" style="background-image: url('C:/Users/MAKARATASI/Desktop/SiteW/Files/forum1.jpg');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="container mx-auto text-center text-white relative z-10 py-32 px-6">
+            <h2 class="text-3xl sm:text-4xl font-bold mb-4">Concours de Développement Logiciel</h2>
+            <p class="text-xl">Stimulez l'innovation et la créativité dans le domaine de la technologie.</p>
+        </div>
+    </section>
+
+    <!-- Détails du Concours -->
+    <section class="py-16">
+        <div class="container mx-auto px-6">
+            <h3 class="text-3xl font-semibold mb-6" data-aos="fade-up">Présentation du Concours</h3>
+            <p class="text-lg text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="100">
+                Ce concours est conçu pour encourager les développeurs de logiciels à proposer des solutions innovantes. Les participants auront l'occasion de démontrer leurs compétences et de contribuer à des projets qui auront un impact positif sur la société.
+            </p>
+
+            <h3 class="text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="200">Détails du Concours</h3>
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-6" data-aos="fade-up" data-aos-delay="300">
+                <h4 class="text-2xl font-semibold mb-3">Objectifs du Concours</h4>
+                <ul class="list-disc pl-6 text-lg text-gray-700">
+                    <li>Encourager l'innovation dans le domaine du développement logiciel</li>
+                    <li>Offrir une plateforme pour les jeunes talents</li>
+                    <li>Favoriser des solutions durables pour la technologie</li>
+                </ul>
+            </div>
+
+            <h3 class="text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="400">Icônes du Concours</h3>
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="text-center bg-white shadow-xl rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="500">
+                    <i class="fas fa-laptop-code text-5xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Innovation</h4>
+                    <p class="text-gray-600">Le concours est centré sur l'innovation dans le développement logiciel.</p>
+                </div>
+                <div class="text-center bg-white shadow-xl rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="600">
+                    <i class="fas fa-trophy text-5xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Récompenses</h4>
+                    <p class="text-gray-600">Des prix attractifs pour les meilleurs projets.</p>
+                </div>
+                <div class="text-center bg-white shadow-xl rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="700">
+                    <i class="fas fa-users text-5xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Collaborations</h4>
+                    <p class="text-gray-600">Une opportunité pour collaborer avec des experts du secteur.</p>
+                </div>
+                <div class="text-center bg-white shadow-xl rounded-lg p-6 transform hover:scale-105 transition duration-300" data-aos="fade-up" data-aos-delay="800">
+                    <i class="fas fa-cogs text-5xl text-yellow-500 mb-4"></i>
+                    <h4 class="text-xl font-semibold mb-2">Technologie</h4>
+                    <p class="text-gray-600">Mise en avant de solutions technologiques de pointe.</p>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="900">Statistiques du Concours</h3>
+            <div class="bg-white shadow-lg rounded-lg p-8 mb-6" data-aos="fade-up" data-aos-delay="1000">
+                <h4 class="text-2xl font-semibold mb-3">Graphique des Participations</h4>
+                <div class="relative" style="height: 300px;">
+                    <canvas id="contestChart"></canvas>
+                </div>
+            </div>
+
+            <h3 class="text-3xl font-semibold mb-6" data-aos="fade-up" data-aos-delay="1100">Prochaines Étapes</h3>
+            <p class="text-lg text-gray-700 mb-6" data-aos="fade-up" data-aos-delay="1200">
+                Le concours se déroulera en plusieurs étapes, à commencer par la soumission des projets, suivie de la sélection des finalistes et de la cérémonie de remise des prix.
+            </p>
+
+            <div class="text-center">
+                <a href="#contact" class="bg-yellow-500 text-black py-2 px-6 rounded-full font-semibold hover:bg-yellow-400">Contactez-nous pour plus d'informations</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-green-800 text-white py-6 text-center">
+        <p>&copy; 2025 Impact Eco Group. Tous droits réservés.</p>
+        <div class="mt-4">
+            <a href="#" class="text-gray-300 hover:text-white mx-4"><i class="fab fa-facebook"></i> Facebook</a>
+            <a href="#" class="text-gray-300 hover:text-white mx-4"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="#" class="text-gray-300 hover:text-white mx-4"><i class="fab fa-instagram"></i> Instagram</a>
+        </div>
+    </footer>
+
+
+    <!-- AOS Library -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init(); // Initialisation des animations AOS
+    </script>
+    
+    <!-- Chart.js pour graphique -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        var ctx = document.getElementById('contestChart').getContext('2d');
+        var contestChart = new Chart(ctx, {
+            type: 'pie',
+            data: {
+                labels: ['Inscriptions', 'Soumissions', 'Finalistes', 'Gagnants'],
+                datasets: [{
+                    label: 'Statistiques du Concours',
+                    data: [100, 60, 10, 1], // Exemple de données
+                    backgroundColor: ['#FFB84D', '#4B9E4A', '#F15B5B', '#2F80ED'],
+                    borderColor: ['#FFF', '#FFF', '#FFF', '#FFF'],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                responsive: true,
+                plugins: {
+                    legend: {
+                        position: 'top',
+                    },
+                    tooltip: {
+                        enabled: true
+                    }
+                }
+            }
+        });
+    </script>
+</body>
+</html>
